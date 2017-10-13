@@ -21,29 +21,57 @@ let canvas = Canvas(width: 300, height: 300)
 //Draw dots
 for x in stride(from: 0, through: 300, by: 25) {
     for y in stride(from: 300, through: 0, by: -25) {
-
-    x
-    
-    // Draw each dot
-    canvas.drawEllipse(centreX: x, centreY: y, width: 1, height: 1)
-    
-    canvas
-}}
-
-//Draw a line
-canvas.defaultLineWidth=1
-canvas.drawLine(fromX: 0, fromY: 195, toX: 50, toY: 140)
-for y in stride (from: 195 through: 0 by:-50) {
+        
+        x
+        
+        // Draw each dot
+        canvas.drawEllipse(centreX: x, centreY: y, width: 1, height: 1)
+        
+        canvas
+    }
     
 }
 
 //Draw a line
+canvas.lineColor = Color.init(hue: 360, saturation: 0, brightness: 37, alpha: 100)
+canvas.defaultLineWidth = 1
+canvas.drawLine(fromX: 0, fromY: 195, toX: 50, toY: 140)
+for i in stride(from: 0, through: 50, by: 1) {
+    
+    
+    //Draw each line
+    canvas.drawLine(fromX: i, fromY: 0, toX: i, toY: 195-i)
+    
+    canvas.defaultLineWidth=1
+    
+    
+}
+
+
+//Draw a line
+canvas.defaultLineWidth=1
 canvas.drawLine(fromX: 50, fromY: 140, toX: 100, toY: 195)
+for i in stride(from: 50, through: 100, by: 1) {
+    
+    //Draw each line
+    canvas.drawLine(fromX: i, fromY: 0, toX: i, toY: 95+i)
+    
+    canvas.defaultLineWidth=1
+    
+}
 
 //Draw a line
+canvas.defaultLineWidth=1
 canvas.drawLine(fromX: 100, fromY: 195, toX: 150, toY: 140)
+for i in stride(from: 100, through: 150, by:1) {
+    
+    //Draw each line
+    canvas.drawLine(fromX: i, fromY: 0, toX: i, toY: 295-i)
+}
+
 
 //Draw a line
+
 canvas.drawLine(fromX: 150, fromY: 140, toX: 100, toY: 195)
 
 //Draw a line
@@ -54,6 +82,8 @@ canvas.drawLine(fromX: 200, fromY: 195, toX: 250, toY: 140)
 
 //Draw a line
 canvas.drawLine(fromX: 250, fromY: 140, toX: 300, toY: 195)
+
+
 /*:
  ## Template code
  The code below is necessary to see results in the Assistant Editor at right. Please do not remove.
