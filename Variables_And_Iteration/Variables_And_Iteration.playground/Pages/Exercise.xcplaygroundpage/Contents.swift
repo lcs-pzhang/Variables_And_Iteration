@@ -102,53 +102,113 @@ canvas.drawLine(fromX: 250, fromY: 140, toX: 300, toY: 195)
 
 
 //Draw a line
+canvas.lineColor=Color.init(hue: 360, saturation: 0, brightness: 70, alpha: 100)
 canvas.defaultLineWidth=3
 canvas.drawLine(fromX: 0, fromY: 100, toX: 25, toY: 75)
+for i in stride(from: 0, through: 25, by:1) {
+    
+    //Draw each line
+    canvas.drawLine(fromX: i, fromY: 0, toX: i, toY: 100-i)
+}
 
 //Draw a line
 canvas.defaultLineWidth=3
 canvas.drawLine(fromX: 25, fromY: 75, toX: 50, toY: 100)
+for i in stride(from: 25, through: 50, by: 1) {
+    
+    //Draw each line
+    canvas.drawLine(fromX: i, fromY: 0, toX: i, toY: 50+i)
+}
 
 //Draw a line
 canvas.defaultLineWidth=3
 canvas.drawLine(fromX: 50, fromY: 100, toX: 75, toY: 75)
+for i in stride(from: 50, through: 75, by:1) {
+    
+    //Draw each line
+    canvas.drawLine(fromX: i, fromY: 0, toX: i, toY: 150-i)
+}
 
 //Draw a line
 canvas.defaultLineWidth=3
 canvas.drawLine(fromX: 75, fromY: 75, toX: 100, toY: 100)
+for i in stride(from:75, through:100, by: 1) {
+    
+    //Draw each line
+    canvas.drawLine(fromX: i, fromY: 0, toX: i, toY: 0+i)
+}
 
 //Draw a line
 canvas.defaultLineWidth=3
 canvas.drawLine(fromX: 100, fromY: 100, toX: 125, toY: 75)
+for i in stride(from: 100, through: 125, by:1) {
+    
+    //Draw each line
+    canvas.drawLine(fromX: i, fromY: 0, toX: i, toY: 200-i)
+}
 
 //Draw a line
 canvas.defaultLineWidth=3
 canvas.drawLine(fromX: 125, fromY: 75, toX: 150, toY: 100)
+for i in stride(from: 125, through: 150, by:1) {
+    
+    //Draw each line
+    canvas.drawLine(fromX: i, fromY: 0, toX: i, toY: -50+i)
+}
 
 //Draw a line
 canvas.defaultLineWidth=3
 canvas.drawLine(fromX: 150, fromY: 100, toX: 175, toY: 75)
+for i in stride(from: 150, through: 175, by:1) {
+    
+    //Draw each line
+    canvas.drawLine(fromX: i, fromY: 0, toX: i, toY: 250-i)
+}
 
 //Draw a line
 canvas.defaultLineWidth=3
 canvas.drawLine(fromX: 175, fromY: 75, toX: 200, toY: 100)
+for i in stride(from:175, through:200, by:1) {
+    
+    //Draw each line
+    canvas.drawLine(fromX: i, fromY: 0, toX: i, toY: -100+i)
+}
 
 //Draw a line
 canvas.defaultLineWidth=3
 canvas.drawLine(fromX: 200, fromY: 100, toX: 225, toY: 75)
+for i in stride(from: 200, through:225, by:1) {
+    
+    //Draw each line
+    canvas.drawLine(fromX: i, fromY: 0, toX: i, toY: 300-i)
+}
 
 //Draw a line
 canvas.defaultLineWidth=3
 canvas.drawLine(fromX: 225, fromY: 75, toX: 250, toY: 100)
+for i in stride(from:225, through:250, by:1) {
+    
+    //Draw each line
+    canvas.drawLine(fromX: i, fromY: 0, toX: i, toY: -150+i)
+}
 
 //Draw a line
 canvas.defaultLineWidth=3
 canvas.drawLine(fromX: 250, fromY: 100, toX: 275, toY: 75)
+for i in stride(from:250, through:275, by :1) {
+    
+    //Draw each line
+    canvas.drawLine(fromX: i, fromY: 0, toX: i, toY: 350-i)
+}
 
 //Draw a line
 canvas.defaultLineWidth=3
 canvas.drawLine(fromX: 275, fromY: 75, toX: 300, toY: 100)
-
+for i in stride(from: 275, through: 300, by: 1) {
+    
+    //Draw each line
+    canvas.drawLine(fromX: i, fromY: 0, toX: i, toY: -200+i)
+}
 
 
 /*:
