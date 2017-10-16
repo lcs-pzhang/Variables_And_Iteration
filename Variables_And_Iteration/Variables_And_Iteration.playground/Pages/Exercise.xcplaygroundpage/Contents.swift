@@ -33,7 +33,7 @@ for x in stride(from: 0, through: 300, by: 25) {
 }
 
 //Draw a line
-canvas.lineColor = Color.init(hue: 360, saturation: 0, brightness: 80, alpha: 100)
+canvas.lineColor = Color.init(hue: 360, saturation: 0, brightness: 70, alpha: 100)
 canvas.defaultLineWidth = 1
 canvas.drawLine(fromX: 0, fromY: 195, toX: 50, toY: 140)
 for i in stride(from: 0, through: 50, by: 1) {
@@ -102,7 +102,7 @@ canvas.drawLine(fromX: 250, fromY: 140, toX: 300, toY: 195)
 
 
 //Draw a line
-canvas.lineColor=Color.init(hue: 360, saturation: 0, brightness: 70, alpha: 100)
+canvas.lineColor=Color.init(hue: 360, saturation: 0, brightness: 50, alpha: 100)
 canvas.defaultLineWidth=3
 canvas.drawLine(fromX: 0, fromY: 100, toX: 25, toY: 75)
 for i in stride(from: 0, through: 25, by:1) {
