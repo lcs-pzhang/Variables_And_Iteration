@@ -19,27 +19,13 @@ import PlaygroundSupport
 
 // Create canvas
 let canvas = Canvas(width: 500, height: 500)
+canvas.drawShapesWithBorders = false
+canvas.lineColor=Color.init(hue: 110, saturation: 100, brightness: 90, alpha: 100)
+canvas.fillColor=Color.init(hue: 110, saturation: 100, brightness: 90, alpha: 100)
+canvas.drawEllipse(centreX: 250, centreY: 250, width: 100, height: 100)
 
-// No fill
-canvas.drawShapesWithFill = false 
+canvas.lineColor=Color.init(hue: <#T##Float#>, saturation: <#T##Float#>, brightness: <#T##Float#>, alpha: <#T##Float#>)
 
-// Loop to set horizontal position.
-for x in stride(from: 50, through: 450, by: 100) {
-    
-    // Loop to set vertical position
-    for y in stride(from: 450, through: 50, by: -100) {
-        
-        //nDraw five squares
-        for size in stride(from: 100, through: 20, by: -20) {
-  canvas.drawRectangle(bottomLeftX: x, bottomLeftY: y, width: size, height: size)
-        }
-        
-
-    
-    }
-
-}
-    
 
 
 
