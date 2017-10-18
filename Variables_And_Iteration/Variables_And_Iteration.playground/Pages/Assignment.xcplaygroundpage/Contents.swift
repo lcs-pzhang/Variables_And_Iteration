@@ -66,7 +66,7 @@ for i in stride(from: 1, through: 8, by: 1) {
     // Loop 8 times
     for i in stride(from: 1, through: 8, by: 1) {
         canvas.drawLine(fromX: 150, fromY: 70, toX: 200, toY: 50)
-        canvas.drawLine(fromX: 150, fromY: 150, toX: 50, toY: 50)
+        canvas.drawLine(fromX: 150, fromY: 70, toX: 250, toY: 50)
         canvas.drawLine(fromX: 40, fromY: 700, toX: 30, toY: 50)
     }
     canvas.drawLine(fromX: 0, fromY: 0, toX: 20, toY: 50)
