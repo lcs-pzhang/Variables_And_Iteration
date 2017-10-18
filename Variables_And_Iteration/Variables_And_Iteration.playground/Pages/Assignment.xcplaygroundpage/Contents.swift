@@ -56,15 +56,25 @@ canvas.drawEllipse(centreX: 250, centreY: 250, width: 10, height: 10)
 //Draw a line
 canvas.lineColor=Color.init(hue: 360, saturation: 0, brightness: 100, alpha: 100)
 canvas.defaultLineWidth=2
-canvas.drawLine(fromX: 250, fromY: 250, toX: 270, toY: 320)
 
-canvas.drawLine(fromX: 270, fromY: 320, toX: 220, toY: 360)
+canvas.translate(byX: 250, byY: 250)
 
-canvas.drawLine(fromX: 220, fromY: 360, toX: 245, toY: 400)
 
-canvas.drawLine(fromX: 245, fromY: 400, toX: 235, toY: 450)
+// Loop 8 times
+for i in stride(from: 1, through: 8, by: 1) {
 
-canvas.drawLine(fromX: 235, fromY: 450, toX: 280, toY: 500)
+    // 
+    canvas.drawLine(fromX: 0, fromY: 0, toX: 20, toY: 50)
+    canvas.drawLine(fromX: 20, fromY: 50, toX: 5, toY: 100)
+    canvas.drawLine(fromX: 5, fromY: 100, toX: 25, toY: 160)
+    canvas.drawLine(fromX: 25, fromY: 160, toX: 0, toY: 210)
+    canvas.drawLine(fromX: 0, fromY: 210, toX: 15, toY: 250)
+    
+    canvas.rotate(by: 45)
+}
+
+
+
 
 
 
