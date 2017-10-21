@@ -65,14 +65,20 @@ for i in stride(from: 1, through: 8, by: 1) {
 
     // Loop 8 times
     for i in stride(from: 1, through: 8, by: 1) {
-        canvas.drawLine(fromX: 100, fromY: 100, toX: 150, toY: 70)
-        canvas.drawLine(fromX: 40, fromY: 700, toX: 30, toY: 50)
+        canvas.drawLine(fromX: 100, fromY: 50, toX: 150, toY: 20)
+        
+        
     }
     canvas.drawLine(fromX: 0, fromY: 0, toX: 20, toY: 50)
     canvas.drawLine(fromX: 20, fromY: 50, toX: 5, toY: 100)
     canvas.drawLine(fromX: 5, fromY: 100, toX: 25, toY: 160)
     canvas.drawLine(fromX: 25, fromY: 160, toX: 0, toY: 210)
     canvas.drawLine(fromX: 0, fromY: 210, toX: 15, toY: 250)
+    canvas.drawLine(fromX: 10, fromY: 85, toX: 55, toY: 110)
+    canvas.drawLine(fromX: 55, fromY: 110, toX: 80, toY: 160)
+    canvas.drawLine(fromX: 80, fromY: 160, toX: 130, toY: 180)
+    canvas.drawLine(fromX: 130, fromY: 180, toX: 100, toY: 220)
+    
     
     canvas.rotate(by: 45)
 }
